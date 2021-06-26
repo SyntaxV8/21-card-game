@@ -1,0 +1,46 @@
+header {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 50px;
+}
+
+body {
+  background-image: url("images/shutterstock_293784941-780x405.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  grid-template-columns: 2fr 3fr 1fr 3fr 2fr;
+  grid-template-areas: "a a a a a " "z player head computer b" "c player head computer e" "f button button button h";
+}
+
+.btnplacement {
+  grid-area: button;
+  color: white;
+}
+
+.head {
+  grid-area: head;
+  color: white;
+  align-self: center;
+}
+
+.player {
+  grid-area: player;
+}
+
+.computer {
+  grid-area: computer;
+}
+
+/*# sourceMappingURL=21.css.map */
