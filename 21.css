@@ -19,9 +19,9 @@ h1 {
 .container {
   text-align: center;
   display: grid;
-  grid-template-rows: 1fr 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
   grid-template-columns: 2fr 3fr 1fr 3fr 2fr;
-  grid-template-areas: "a a a a a " "z player head computer b" "c player head computer e" "f button button button h";
+  grid-template-areas: "a a a a a " "z player head computer b" "c player head computer e" "f draw button h h";
 }
 
 .btnplacement {
@@ -41,6 +41,13 @@ h1 {
 
 .computer {
   grid-area: computer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }
 
 /*# sourceMappingURL=21.css.map */

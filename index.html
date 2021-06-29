@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>21 game template</title>
     <link rel="stylesheet" href="21.css">
-    <script src="21.js"></script>
+    <script defer src="21.js"></script>
 </head>
 
 <body>
@@ -14,23 +14,34 @@
 <h1>So you like to gamble right?</h1>
 
 <div class="container">
+
     <div class="head">
-        <h3>Do you really think you can win?</h3>
+        <h3 id="score">Do you really think you can win?</h3>
+        <button id="run">YES</button>
     </div>
-    <div class="btnplacement">
-        <h3>Do you want to take a card?</h3>
-        <button>YES</button>
-    </div>
+
     <div class="player">
         <h1>Player card value:</h1>
-        <p></p>
-        <p></p>
+        <p id="player"></p>
+        <h1>Total hand value:</h1>
+        <p id="totalPlayer"></p>
     </div>
+
     <div class="computer">
         <h1>Computer card value:</h1>
-        <p></p>
-        <p></p>
+        <p id="computer"></p>
+        <h1>Total computer value:</h1>
+        <p id ="totalComputer"></p>
     </div>
+
+    <div class="btnplacement">
+        <h3>Do you want to take a card?</h3>
+        <div class="buttons">
+            <button id="draw">Draw</button>
+            <button id="stand">Stand</button>
+        </div>
+    </div>
+
 </div>
 
 </body>
